@@ -1,0 +1,39 @@
+{
+  "config": {
+    "glp": "generative-latent-prior/glp-llama8b-d6",
+    "layer": 15,
+    "n_eval_seq": 300,
+    "max_length": 256,
+    "dataset": "GSM8K",
+    "glp_u": 0.5,
+    "glp_steps": 20,
+    "sae_d_sae": 32768,
+    "sae_k": 64,
+    "sae_steps": 5000,
+    "sae_n_train_acts": 500000
+  },
+  "llama8b_base": {
+    "model": "Llama-3.1-8B (Base)",
+    "orig_loss": 1.5898,
+    "glp_loss": 1.6221,
+    "delta_glp": 0.0323,
+    "sae_loss": 1.6049,
+    "delta_sae": 0.0151,
+    "n_tokens": 49030
+  },
+  "deepseek_r1": {
+    "model": "DeepSeek-R1-Distill-Llama-8B",
+    "orig_loss": 2.0475,
+    "glp_loss": 2.1015,
+    "delta_glp": 0.0539,
+    "sae_loss": 2.2087,
+    "delta_sae": 0.1612,
+    "n_tokens": 48751
+  },
+  "paper_reference": {
+    "llama_base_glp": 0.0513,
+    "llama_base_sae": 0.1976,
+    "llama_inst_glp": 0.086,
+    "llama_inst_sae": 0.2224
+  }
+}

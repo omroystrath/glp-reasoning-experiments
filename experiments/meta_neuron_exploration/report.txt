@@ -1,0 +1,146 @@
+META-NEURON EXPLORATION REPORT
+================================================================================
+Dataset: 1000 GSM8K reasoning traces from DeepSeek-R1-Distill-Llama-8B
+Tokens analyzed: 15000
+Meta-neurons per token: 98304
+GLP: generative-latent-prior/glp-llama8b-d6
+Noise level: u=0.9 (paper t=0.09999999999999998)
+
+
+CATEGORY SUMMARY
+--------------------------------------------------------------------------------
+
+  BACKTRACKING (1 neurons)
+    Neuron  79030 (layer 4) score=0.250 correctness_bias=0.60 tokens: ['?', '?', '?', '?', '?', '?', '?', '?']
+
+  COMPUTATION (131 neurons)
+    Neuron  33937 (layer 2) score=0.643 correctness_bias=0.55 tokens: ['=', 'the', 'the', 'from', '3', 'new', 'half', '"']
+    Neuron  35993 (layer 2) score=0.643 correctness_bias=0.70 tokens: ['Whole', '}', '45', '14', '30', 'speed', '', '3']
+    Neuron  36760 (layer 2) score=0.643 correctness_bias=0.80 tokens: [')', ',', ')', ',', ':', '', 'x', '\\']
+
+  VERIFICATION (1 neurons)
+    Neuron  57772 (layer 3) score=0.300 correctness_bias=0.40 tokens: ['I', 'I', 'I', 'I', 'I', 'I', 'I', 'I']
+
+  CONCLUSION (0 neurons)
+
+  SETUP (5 neurons)
+    Neuron  29172 (layer 1) score=0.400 correctness_bias=0.55 tokens: ['', '', 'step', '', '', ',', 'step', ',']
+    Neuron  34954 (layer 2) score=0.400 correctness_bias=0.50 tokens: ['book', 'Grandma', 'sleep', ':', ',', 'says', 'The', 'ells']
+    Neuron  55285 (layer 3) score=0.400 correctness_bias=0.75 tokens: ['', '', '', '', '', '', '', '']
+
+  STEP_TRANSITION (12 neurons)
+    Neuron  75920 (layer 4) score=0.600 correctness_bias=0.40 tokens: ['balloons', 'be', '', 'to', '.', '', '', '$']
+    Neuron  82125 (layer 5) score=0.600 correctness_bias=0.55 tokens: ['Combined', 'a', 'mileage', 'much', 'had', 'His', 'his', 'Total']
+    Neuron  97589 (layer 5) score=0.600 correctness_bias=0.50 tokens: ['I', 'the', 'which', 'Martha', 'should', 'and', 'and', 'the']
+
+  UNCERTAINTY (0 neurons)
+
+  NUMERIC (4 neurons)
+    Neuron  58086 (layer 3) score=0.800 correctness_bias=0.50 tokens: ['4', '24', '3', '36', '40', '12', '13', '2']
+    Neuron  60717 (layer 3) score=0.800 correctness_bias=0.35 tokens: ['22', '18', '$', '12', '3', '000', '5', '18']
+    Neuron  17876 (layer 1) score=0.550 correctness_bias=0.65 tokens: ['minutes', '67', '4', 'pieces', '41', '5', 'afternoon', '450']
+
+  UNKNOWN (49 neurons)
+    Neuron  29636 (layer 1) score=0.100 correctness_bias=0.60 tokens: ['many', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>']
+    Neuron  37969 (layer 2) score=0.100 correctness_bias=0.65 tokens: ['}', 'plus', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', 'plus', '<｜end▁of▁sentence｜>']
+    Neuron  84672 (layer 5) score=0.100 correctness_bias=0.75 tokens: ['<｜end▁of▁sentence｜>', 'miles', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>', '<｜end▁of▁sentence｜>']
+
+
+FAITHFULNESS NEURONS DETAIL
+--------------------------------------------------------------------------------
+
+  Neuron 53262 — best predictor for early_think correctness
+  Category: computation | Phase: early_think | Correct bias: 55%
+  Top 20 activating tokens:
+    [answe|Y] val=+2.414 tok='the' ctx="would be the same as the ratio of the speeds multiplied"
+    [late_|N] val=+2.197 tok='' ctx="(5) is approximately 1.6094"
+    [early|Y] val=+1.828 tok='' ctx="Dividing 36 by 3 gives 12,"
+    [early|Y] val=+1.806 tok='' ctx="80, which is 60.  Since the total"
+    [mid_t|N] val=+1.777 tok='' ctx="pounds/hour} = 45 \text{ pounds"
+    [early|Y] val=+1.658 tok='' ctx="number of attending guests is 45 minus 4,"
+    [answe|N] val=+1.651 tok='' ctx="at an average speed of 50 km/hr. He"
+    [late_|Y] val=+1.594 tok='' ctx="70 mph, which is 3 hours. Coming back"
+    [mid_t|Y] val=+1.594 tok='the' ctx="of yellow balloons by dividing the total bologna for yellow"
+    [mid_t|N] val=+1.571 tok='' ctx="cooking class Thursday = 0.5 *"
+    [mid_t|N] val=+1.514 tok='of' ctx="time is just the sum of the two times.  Let"
+    [early|Y] val=+1.433 tok='can' ctx="is 84, I can set up the equation"
+    [early|Y] val=+1.429 tok='' ctx="taken away. This leaves 50 - 20 ="
+    [late_|N] val=+1.369 tok=',' ctx=", which is 9,700, and then subtract"
+    [answe|N] val=+1.347 tok='just' ctx="perhaps the beads are not just between the gemstones but"
+    [late_|N] val=+1.309 tok='' ctx="8 blue, added 75% of them,"
+    [answe|Y] val=+1.261 tok=']' ctx="= 48 \]  Dividing both sides by"
+    [answe|Y] val=+1.260 tok='as' ctx="distances would be the same as the ratio of the speeds"
+    [early|N] val=+1.259 tok='is' ctx="This means that while Nate is filling holes during the day"
+    [mid_t|Y] val=+1.258 tok='100' ctx="so now we have 100 spools so far."
+
+  Neuron 58485 — best predictor for mid_think correctness
+  Category: computation | Phase: mid_think | Correct bias: 70%
+  Top 20 activating tokens:
+    [early|Y] val=+6.820 tok='}' ctx="4 \text{ boats} \times 5 \"
+    [early|Y] val=+6.051 tok='}' ctx="3 \text{ cats} \times 2 \"
+    [mid_t|Y] val=+6.047 tok='\' ctx="Age} - 25\% \times \text"
+    [mid_t|N] val=+5.875 tok='}' ctx=", \text{mph} \times 5 \"
+    [mid_t|Y] val=+5.770 tok='\' ctx="= \frac{24\ \text{feet"
+    [early|Y] val=+5.719 tok='\' ctx="arnings} = \$10 \times 5\,\"
+    [mid_t|Y] val=+5.422 tok='\' ctx="{Cost of yogurt} \]  \[ 11 ="
+    [mid_t|Y] val=+5.070 tok='\' ctx="Cost per Geometry Set}) \]  \[ \text"
+    [mid_t|N] val=+4.531 tok='}' ctx="0 \text{ meters} \times \left("
+    [mid_t|Y] val=+4.223 tok='}' ctx="\text{ inpatients} \times 20 \"
+    [answe|N] val=+4.207 tok='}' ctx="\text{Time} = \frac{\text"
+    [early|Y] val=+4.180 tok='**' ctx="made **20 more friends** than Lily."
+    [late_|Y] val=+4.125 tok='}' ctx="500 \text{ patients} \times 0."
+    [mid_t|Y] val=+4.105 tok='\' ctx="\$60 = \$360\)    - **Car"
+    [mid_t|Y] val=+3.984 tok='}' ctx="\text{ years old}      \]  2."
+    [mid_t|N] val=+3.947 tok=',' ctx="\boxed{180{,}000 \text{"
+    [mid_t|N] val=+3.916 tok='\' ctx="per Gallon}    \]        \["
+    [mid_t|N] val=+3.916 tok='\' ctx="} - 400 \] \[ \text"
+    [mid_t|Y] val=+3.873 tok='\' ctx="text{ hours}      \]  3. **Calculate"
+    [mid_t|Y] val=+3.873 tok='\' ctx="years} = 26\ \text{inches"
+
+  Neuron 33220 — best predictor for late_think correctness
+  Category: computation | Phase: mid_think | Correct bias: 75%
+  Top 20 activating tokens:
+    [mid_t|N] val=+4.961 tok='' ctx="Weight per serving:**             \[      \"
+    [mid_t|N] val=+4.773 tok='' ctx="\) cards is:      \[      \frac"
+    [mid_t|Y] val=+4.730 tok='text' ctx="encore: \[ \text{Total runtime} ="
+    [answe|N] val=+4.664 tok='\(' ctx="old. </think>  Let \( W \) be Wendy"
+    [mid_t|N] val=+4.625 tok='' ctx="52    \]        \[    \"
+    [early|Y] val=+4.504 tok='' ctx="'s Plants:**        Frederick has **10 plants"
+    [mid_t|Y] val=+4.441 tok='' ctx="of \( F \):      \[      \text"
+    [mid_t|Y] val=+4.430 tok='[' ctx="second dog.** \[ \text{Weight of"
+    [mid_t|Y] val=+4.406 tok='' ctx="time for appointments:**       \[      10"
+    [mid_t|Y] val=+4.395 tok='[' ctx="the left side:  \[ x + 2 ="
+    [mid_t|Y] val=+4.383 tok='' ctx="Total cost for oranges:**       \["
+    [mid_t|Y] val=+4.234 tok='' ctx="**Chips:**       \[      2"
+    [early|Y] val=+4.207 tok='' ctx="2    \]        \[    \"
+    [late_|Y] val=+4.191 tok='text' ctx="\[    \text{Total volume} ="
+    [mid_t|Y] val=+4.184 tok='' ctx="- The difference is:      \[      200"
+    [mid_t|Y] val=+4.176 tok='text' ctx="\[    \text{Bad oranges} ="
+    [mid_t|Y] val=+4.172 tok='(\' ctx="**  Ellen pays \(\boxed{1}\)"
+    [mid_t|Y] val=+4.137 tok='[' ctx="Difference:**       \[      \text{Difference"
+    [late_|N] val=+4.137 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+4.137 tok='[' ctx=":**        \[    \text{Cost"
+
+  Neuron 50861 — best predictor for answer correctness
+  Category: unknown | Phase: mid_think | Correct bias: 80%
+  Top 20 activating tokens:
+    [mid_t|Y] val=+17.203 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+17.172 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.969 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.969 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.969 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [late_|Y] val=+16.953 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|N] val=+16.922 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.906 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.906 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.844 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.828 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [answe|Y] val=+16.828 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|N] val=+16.812 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|N] val=+16.812 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.797 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.797 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.781 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.766 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|N] val=+16.766 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"
+    [mid_t|Y] val=+16.750 tok='<｜end▁of▁sentence｜>' ctx="<｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜end▁of▁sentence｜><｜e"

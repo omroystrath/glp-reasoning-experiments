@@ -1,0 +1,18 @@
+{
+  "raw_1d": {
+    "test_auc": 0.6977,
+    "best_neuron": 788
+  },
+  "glp_1d": {
+    "test_auc": 0.7356,
+    "best_neuron": 50861
+  },
+  "raw_dense": {
+    "test_auc": 0.8331
+  },
+  "glp_dense": {
+    "test_auc": 0.5
+  },
+  "n_samples": 300,
+  "n_correct": 198
+}

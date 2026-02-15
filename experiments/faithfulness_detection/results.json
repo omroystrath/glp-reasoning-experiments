@@ -1,0 +1,59 @@
+{
+  "config": {
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "glp": "generative-latent-prior/glp-llama8b-d6",
+    "layer": 15,
+    "n_traces": 300,
+    "n_correct": 198,
+    "glp_u": 0.9
+  },
+  "phase_probing": {
+    "early_think": {
+      "val_auc": 0.6325,
+      "test_auc": 0.6276,
+      "best_neuron": 53262,
+      "n_samples": 900,
+      "n_correct": 594,
+      "n_incorrect": 306
+    },
+    "mid_think": {
+      "val_auc": 0.6036,
+      "test_auc": 0.6678,
+      "best_neuron": 58485,
+      "n_samples": 900,
+      "n_correct": 594,
+      "n_incorrect": 306
+    },
+    "late_think": {
+      "val_auc": 0.6478,
+      "test_auc": 0.7231,
+      "best_neuron": 33220,
+      "n_samples": 900,
+      "n_correct": 594,
+      "n_incorrect": 306
+    },
+    "answer": {
+      "val_auc": 0.7314,
+      "test_auc": 0.791,
+      "best_neuron": 50861,
+      "n_samples": 900,
+      "n_correct": 594,
+      "n_incorrect": 306
+    }
+  },
+  "temporal_probing": {
+    "bins": 10,
+    "aucs": [
+      0.7407,
+      0.4737,
+      0.525,
+      0.5366,
+      0.7535,
+      0.6008,
+      0.543,
+      0.6175,
+      0.6675,
+      0.6829
+    ]
+  }
+}

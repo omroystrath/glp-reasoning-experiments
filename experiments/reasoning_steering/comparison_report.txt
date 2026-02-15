@@ -1,0 +1,612 @@
+REASONING STEERING EXPERIMENT
+================================================================================
+Model: deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+GLP: generative-latent-prior/glp-llama8b-d6
+Layer: 15
+Direction source: DiffMean on 1000 GSM8K examples
+Direction norm: 3.6798
+Test prefixes: 30
+
+
+================================================================================
+  STEERING COEFFICIENT: a = 1.0
+================================================================================
+
+  Prefix: The capital of France is
+  [VANILLA]   Paris, and its currency is the euro. The country is known for its rich history, cultural landmarks, and contributions to art and fashion. France is a member of the European Union and the United Nations. Its official language is French, and the people are referred to as French people or Les Français
+  [GLP]       Paris. The capital of Germany is Berlin. The capital of Italy is Rome. The capital of Japan is Tokyo. The capital of the United States is Washington, D.C. The capital of the United Kingdom is London. The capital of China is Beijing. The capital of Russia is Moscow. The capital of India is New Delhi
+  ---
+
+  Prefix: My favorite hobby is
+  [VANILLA]   reading books. I enjoy getting lost in different worlds and learning new things through stories. When I'm not reading, I love spending time with my family, especially my two kids. I also enjoy cooking and trying out new recipes, though I'm not always perfect at it. I have a soft spot for animals an
+  [GLP]       reading. I like to read different genres, like mystery, romance, and adventure. When I have free time, I enjoy going to the library or buying new books. Sometimes, I also like to write in my journal or watch a good movie. I love learning new things, so I'm always looking for interesting topics to e
+  ---
+
+  Prefix: Today I went to the store and
+  [VANILLA]   bought some groceries. I bought some fruits, vegetables, and bread. Then I came back home and started preparing the dinner. I made a salad with some fresh vegetables, and I also made a nice pasta dish. I put some garlic, olive oil, and cheese on the pasta. It was really delicious!
+
+After dinner, I 
+  [GLP]       bought some groceries. I got a loaf of bread, a carton of milk, and a bunch of bananas. Then I went home and made a sandwich. I put the bread in the toaster, spread some butter, and added some jelly. Then I took the carton of milk and poured some into the sandwich. Then I took the bunch of bananas 
+  ---
+
+  Prefix: The weather outside looks
+  [VANILLA]   a bit iffy, but the forecast says it should clear up later. Maybe I can go for a walk after work. Hmm, but I have a few errands to run. Let me see... I need to pick up some things from the store, and then I have a meeting with the team at 3 PM. After that, I can probably take a break. I should chec
+  [GLP]       a bit iffy, but the inside of the house is warm and cozy. I think I'll just stay in and watch some TV shows or maybe read a book. Yeah, that sounds like a good plan. I don't want to go out in the cold. Maybe I'll make some hot tea and have some snacks. That should keep me entertained for the rest o
+  ---
+
+  Prefix: Once upon a time in a small village
+  [VANILLA]  , there was a man who was known for his kindness and wisdom. The villagers would often gather to listen to his stories and advice. One day, a traveler arrived in the village, and the man offered him shelter for the night. The traveler, curious about the man's wisdom, asked him, "What is the secret t
+  [GLP]      , there was a man who was very poor. He had no money, no house, and no family. But he was a hard worker and kind-hearted. One day, he found a magic lamp. When he rubbed it, a genie appeared. The genie said, "I can grant you three wishes." The man was overjoyed and said, "Okay, I wish for a house, a 
+  ---
+
+  Prefix: The best way to cook pasta is
+  [VANILLA]   to bring a large pot of salted water to a boil, then add the pasta, stir it so it doesn't stick, and cook until al dente. Drain, then add sauce or toppings. So, the key steps are boiling the pasta in salted water, stirring, and cooking until it's not too soft.
+
+But wait, sometimes people add oil to
+  [GLP]       to bring a large pot of salted water to a boil, then add the pasta. Cook until the pasta is al dente, which means it's just tender, not mushy. Drain and serve with your favorite sauce.
+
+To make this dish, I can use any type of pasta, but I think penne is a good choice because it holds up well when 
+  ---
+
+  Prefix: I think that artificial intelligence will
+  [VANILLA]   have a significant impact on the job market, but I'm not sure if it's going to be all negative or if there will be positive aspects as well. On one hand, AI can automate tasks that are repetitive and time-consuming, which could free up people to focus on more creative or strategic roles. On the oth
+  [GLP]       be the most significant development in the next 10 years, but I'm not entirely sure. Maybe quantum computing will have a bigger impact? Or perhaps biotechnology? It's hard to say, but AI seems like a strong candidate because it's already making significant strides in areas like healthcare, finance,
+  ---
+
+  Prefix: In the year 2050, humans will
+  [VANILLA]   have colonized the solar system, and the Earth will be a distant memory. But the question is, what will happen to the concept of "home" in this new era? Will it still be tied to a physical location, or will it become more abstract, a feeling rather than a place? As we venture further out into space
+  [GLP]       have colonized other planets, and the concept of "home" will have a different meaning. Maybe we'll have floating cities or space habitats. So, the idea of a "home away from home" might not be as important as it is now. But I think the concept of "home" is something that will always be important, ev
+  ---
+
+  Prefix: The most important thing about leadership is
+  [VANILLA]   that it's not about having all the answers, but about asking the right questions and listening to the people who work for you.
+**-** **Paul Hersey**
+**Leadership is the art of getting someone else to do something you wouldn't do yourself.**
+**-** **Sam Levenson**
+**Leadership is about making others
+  [GLP]       to be yourself, not to lose yourself in the process of leadership. So, if you're trying to be someone else, you're not going to be effective. So, the key is to be yourself, and then lead with that.
+
+So, the first step is to figure out who you are. That is, know your strengths, your weaknesses, your
+  ---
+
+  Prefix: When I woke up this morning I noticed
+  [VANILLA]   that my face was a bit puffy, so I thought maybe I ate too much salt the night before. I decided to make a fresh smoothie to help with the bloating. I grabbed some spinach, banana, almond milk, and maybe a little Greek yogurt. I put everything into the blender and started pureeing it. As I sipped o
+  [GLP]       that my left arm was a bit stiff, but I thought it was just from sleeping on it wrong. Then, as the day went on, the stiffness got worse. I tried to move my arm, but it hurt. I couldn't lift it above my head. I thought maybe I pulled a muscle or something. But when I tried to touch my shoulder, it 
+  ---
+
+  Prefix: A good friend is someone who
+  [VANILLA]   is there for you when you need them, who supports you, and who you can trust. A good friend will listen to your problems, give you advice, and be honest with you. They will also respect your boundaries and not force you to do things you don't want to do. A good friend is someone you can have fun wi
+  [GLP]       is there for you when you need them, who supports you, and who you can rely on. A good friend is someone who respects your boundaries and doesn't take advantage of you. A good friend is someone who is honest and trustworthy, someone you can share your thoughts and feelings with without fear of judg
+  ---
+
+  Prefix: The secret to happiness is
+  [VANILLA]   freedom. But how to achieve it? Maybe through self-awareness and understanding our true nature.
+
+I think the key is to realize that we are not separate from the universe. We are part of it, and by understanding our interconnectedness, we can find true freedom.
+
+So, the steps would be something like
+  [GLP]       to be able to find joy in ordinary things. So, I think the key is to be present in the moment, to appreciate the little things, and to not take life too seriously. Maybe that's why people often say that the best times are the simplest ones.
+
+I also think that having a sense of purpose and meaning i
+  ---
+
+  Prefix: During the summer, I enjoy
+  [VANILLA]   going to the beach and swimming in the ocean. I also like to read books, especially mystery novels. In the fall, I like to watch football games and go apple picking. In the winter, I enjoy skiing and spending time with family. I also love cooking and baking, and I have a sweet tooth for chocolate.
+
+  [GLP]       going to the beach, swimming, and spending time with friends and family. I also like reading, especially mystery novels, and I have a soft spot for thrillers. I'm a bit of a movie buff, so I enjoy watching films, especially ones that are a bit on the darker side or have a good mystery to them. I al
+  ---
+
+  Prefix: Technology has changed the way we
+  [VANILLA]   live, work, and interact. It has also changed the way we approach and solve problems. In the past, problems were often tackled using traditional methods, but with the advent of technology, especially digital tools, we can now leverage data, algorithms, and computational power to find more efficient
+  [GLP]       live, work, and interact. It has also changed the way we approach education. With the rise of online learning platforms, virtual classrooms, and digital tools, the education sector is evolving rapidly. However, not all changes are positive. There are challenges that come with the shift to digital l
+  ---
+
+  Prefix: If I could travel anywhere, I would go to
+  [VANILLA]   the Amazon Rainforest. It's one of the most biodiverse places on Earth, and I've always been fascinated by the wildlife there. I’d love to see giant otters, pink river dolphins, and all the colorful birds. Plus, the lush greenery would be a perfect backdrop for some amazing photos.
+If I had to pick
+  [GLP]       the moon. But I don't know if I can go there. Maybe I can go to the stars, but I don't know how. Maybe I can just stay here and be happy.
+
+Wait, but I want to go somewhere. Maybe I can go to a different country. But I don't know where. Maybe I can go to a place where I can meet new people and have 
+  ---
+
+  Prefix: Education is important because
+  [VANILLA]   it helps individuals to develop their skills and knowledge, which in turn contributes to the development of the society as a whole. It also helps in reducing poverty and inequality by providing equal opportunities to everyone. Education is a key driver for economic growth and social progress.
+
+More
+  [GLP]       it helps individuals to develop critical thinking, problem-solving skills, and creativity. It also plays a role in personal development, as it helps individuals gain a better understanding of themselves and the world around them. Additionally, education is crucial for economic growth because it fos
+  ---
+
+  Prefix: The ocean is fascinating because
+  [VANILLA]   it's so vast and has so many different aspects. I think the key is to find a way to represent the ocean in a way that's both accurate and engaging for people who might not be experts. Maybe using visuals like satellite images or maps could help illustrate the scale and diversity of the ocean.
+
+Anot
+  [GLP]       it's so vast and has so many different aspects. I think the ocean is important because it connects all the continents, it has a huge impact on weather and climate, and it's home to a massive variety of life. But I'm not entirely sure about all the details. Maybe I should look into the different typ
+  ---
+
+  Prefix: My morning routine starts with
+  [VANILLA]   a cup of coffee. I can't function without it. So, I make sure to have coffee beans in the house at all times. But, I also have a thing for loose-leaf teas. I have a small collection of different teas, especially ones that are good for the digestive system. I usually have a cup of herbal tea before 
+  [GLP]       a quick check of my email and social media. I don't want to spend too much time on this, so I just glance through the important ones. After that, I make a to-do list for the day. I figure that having a clear plan helps me stay on track. Then, I get ready for work, which usually involves getting dre
+  ---
+
+  Prefix: Climate change is a challenge that
+  [VANILLA]   requires the cooperation of all sectors of society, including the government, businesses, and individuals. In the context of the COVID-19 pandemic, the importance of a coordinated and comprehensive approach to address both the health crisis and its environmental impacts has become evident. The gove
+  [GLP]       requires a global response, and the international community must work together to address it effectively. The Paris Agreement is a significant step in that direction, but we need to ensure that all countries are on board and that the agreement is implemented. The United States, as a major player in
+  ---
+
+  Prefix: A balanced diet should include
+  [VANILLA]   a variety of food types to ensure all the essential nutrients are covered. This includes proteins, carbohydrates, fats, vitamins, minerals, and water. Each of these categories plays a crucial role in maintaining overall health and preventing diseases.
+
+Proteins are essential for building and repair
+  [GLP]       a variety of food types, such as whole grains, lean proteins, healthy fats, fruits, and vegetables. This variety ensures that you're getting a range of nutrients that your body needs. It's also important to maintain portion control to avoid overeating and to stay within a healthy weight range.
+
+A b
+  ---
+
+  Prefix: Music has the power to
+  [VANILLA]   bring people together, to inspire, and to make us feel alive. It's a universal language that transcends boundaries and connects us all. So, whether you're dancing to your favorite beats, singing along to a heartfelt melody, or just enjoying the rhythm of a song, music is a vital part of our lives. 
+  [GLP]       bring people together, to create a sense of belonging, and to inspire action. It can be a tool for social change, a way to express emotions, and a means of communication. But in some cases, music can also be a source of conflict or division. So, it's important to consider how music is used in diffe
+  ---
+
+  Prefix: The history of civilization shows
+  [VANILLA]   that whenever the people have been given the opportunity to manage their own affairs, they have done so with remarkable success. The principle of self-determination is a powerful force in the development of human society. It is the foundation of all progress and the basis of all true freedom. Witho
+  [GLP]       that whenever the people have been able to substitute the government by their own representatives, the result has been the growth of the democratic principle. But in our case, we have a government that is the creation of a small group of people, and the majority of the population is not represented
+  ---
+
+  Prefix: One thing I learned recently is
+  [VANILLA]   that the average person's brain is made up of about 2.5 trillion neurons, each with around 10,000 connections. That's a lot! But how does this relate to the way we think and process information? Maybe it's about how interconnected our thoughts are, making it easier to link ideas together.
+
+Another 
+  [GLP]       that the sum of the first n natural numbers is n(n + 1)/2. So, if I have 1 + 2 + 3 + ... + n, it equals n(n + 1)/2. That might be useful later.
+
+Another thing is that the sum of the first n even numbers is n(n + 1). Wait, is that right? Let me check. The first few even numbers are 2, 4, 6, 8, etc. 
+  ---
+
+  Prefix: Space exploration is exciting because
+  [VANILLA]   it's about pushing the boundaries of what we know and can do in space. It's not just about rockets and satellites; it's about understanding the universe, improving technology, and even making life better on Earth through applications like satellite communications and weather forecasting. Plus, it's
+  [GLP]       it's about pushing the boundaries of what we know about our universe. It's a mix of science, engineering, mathematics, and a bit of adventure. I think it's important because it helps us understand more about our universe, which in turn can lead to technological advancements that benefit society. Fo
+  ---
+
+  Prefix: The purpose of art is to
+  [VANILLA]   make people feel good, right? So, if I can make people feel good, that's my job. But I also want to make sure that the art I'm creating is meaningful and has a deeper purpose. Maybe it's about exploring human emotions or something like that. I think it's important to have a message or a story behin
+  [GLP]       make people think, to feel, to see the world in a different way. So, if a piece of art can make someone feel something, that's its purpose. But sometimes, people might not get it, or they might not like it. That's okay, because art is subjective.
+
+So, going back to the original question: "Why do so
+  ---
+
+  Prefix: Reading books helps you
+  [VANILLA]   improve your writing skills. It's like learning from the masters. So, I think it's a good idea to read a lot of different authors and styles. That way, you can get a feel for how they structure their sentences, use metaphors, and convey ideas.
+
+Another thing is to write regularly. Even if it's just
+  [GLP]       understand different perspectives and improve your writing skills. It also broadens your knowledge, which can be useful in various aspects of life, not just school.
+
+Reading can help reduce stress and improve your mood. When you get lost in a good book, you can temporarily escape from real-life pro
+  ---
+
+  Prefix: When I think about the future I feel
+  [VANILLA]   a mix of excitement and anxiety. I'm excited because I know that with the right approach, I can achieve my goals and make a positive impact. But anxiety creeps in because I'm not sure how to handle all the uncertainties that lie ahead. I need to find a way to manage this mix of emotions so I can mo
+  [GLP]       a mix of hope and anxiety. I'm not sure what the future holds, but I know I have to work towards it. I need to focus on the things I can control and not get bogged down by the things I can't. Maybe I should set some goals for myself, both short-term and long-term. That way, I have something to work
+  ---
+
+  Prefix: The most surprising fact I know is
+  [VANILLA]   that the number of possible different configurations of a Rubik's Cube can be calculated using a formula involving the prime number 7. The formula is:
+
+Number of configurations = 7 × 3^21 × 2^24 × 1^12
+
+This formula accounts for the different ways the cube can be twisted, flipped, and scrambled. Th
+  [GLP]       that the number 1 is the only number that has exactly one digit. All other numbers have at least two digits. So, 1 is unique in that sense.
+
+Another interesting fact is that the number 2 is the only even prime number. All other even numbers are not prime because they can be divided by 2. So, 2 is s
+  ---
+
+  Prefix: Cooking is therapeutic because
+  [VANILLA]   it allows me to be creative and connect with others through food. It's a way to express love and care, whether it's for family, friends, or even myself. When I cook, I feel a sense of accomplishment and joy, which can be really uplifting. Plus, it's a great stress reliever. I can focus on the proce
+  [GLP]       it allows you to focus on the present moment, which can be especially helpful when dealing with stress or anxiety. The repetitive motions of chopping, slicing, and stirring can be calming. Plus, the end result of a delicious meal can boost your mood and provide a sense of accomplishment.
+
+Additiona
+  ---
+
+  Prefix: The internet has revolutionized how we
+  [VANILLA]   communicate, access information, and conduct business. It has also introduced new challenges, such as privacy concerns, misinformation, and cybersecurity threats. As a result, the development of the internet has become a significant topic of debate among policymakers, researchers, and the general p
+  [GLP]       communicate, access information, and conduct business. It's a powerful tool that can be used to enhance learning, collaboration, and innovation. However, it also presents challenges, such as privacy issues, misinformation, and the potential for overconsumption. As we move forward, it's crucial to u
+  ---
+
+================================================================================
+  STEERING COEFFICIENT: a = 3.0
+================================================================================
+
+  Prefix: The capital of France is
+  [VANILLA]   Paris, which is located in the country's northern part. The city is known for its rich history, cultural significance, and beautiful landmarks. Paris is one of the most visited cities in the world, attracting millions of tourists each year. The Eiffel Tower, the Louvre Museum, and the Arc de Triomp
+  [GLP]       Paris. The capital of Germany is Berlin. The capital of Italy is Rome. The capital of Japan is Tokyo. The capital of the United States is Washington, D.C. The capital of the United Kingdom is London. The capital of China is Beijing. The capital of Russia is Moscow. The capital of India is New Delhi
+  ---
+
+  Prefix: My favorite hobby is
+  [VANILLA]   reading books. I enjoy getting lost in different worlds and learning about new cultures. When I was younger, I used to read books under the streetlights in my village. My parents were farmers, and they didn't have much money, but they always encouraged me to read. They said that books would take me
+  [GLP]       reading. I like to read books, magazines, and articles. When I read, I feel relaxed and it helps me understand different perspectives. Sometimes, I get so absorbed in a book that I lose track of time. I also enjoy writing, especially journaling or creative writing. It's a good way to express my tho
+  ---
+
+  Prefix: Today I went to the store and
+  [VANILLA]   bought some things. I bought a new dress, some shoes, and a handbag. I also got a coffee at the café. I think I spent about $200 on clothes and another $30 on the coffee. So, in total, I spent around $230.
+
+Wait, let me check that again. The dress was $80, the shoes were $50, and the handbag was $6
+  [GLP]       bought some things. Then I came back home and made myself a nice cup of tea. I thought I'd take a moment to write down my thoughts. Hmm, what should I write about? Maybe something that's been on my mind lately. I've been feeling a bit stressed about work, but I don't know why. Maybe it's because I 
+  ---
+
+  Prefix: The weather outside looks
+  [VANILLA]   a bit iffy, but the forecast says it should clear up later. Maybe I can go for a walk after work. Let me check the weather app on my phone. Hmm, it says there's a chance of rain in the morning, but it should pass by midday. Okay, so if I leave a little after the morning rush, I can enjoy the walk w
+  [GLP]       a bit iffy, but the inside of the house is warm and cozy. I think I'll just stay in and watch some TV shows or maybe read a book. Yeah, that sounds like a good plan. I don't want to go out in the cold. Maybe I'll make some hot tea and have some snacks. That should keep me comfortable all day.
+
+Wait
+  ---
+
+  Prefix: Once upon a time in a small village
+  [VANILLA]  , there was a man named Ravi who worked as a tailor. He was known for his kindness and generosity. One day, a traveler arrived in the village and asked Ravi for help. The traveler needed to deliver a message to his friend who lived a few miles away. Ravi, being the kind person he was, immediately ag
+  [GLP]      , there was a man who was very poor. He had no money, no house, and no family. But he was a hard worker. One day, he heard that the king was coming to his village to collect taxes. The man thought, "I have no money to give to the king, so maybe I can offer something else." He looked around and saw t
+  ---
+
+  Prefix: The best way to cook pasta is
+  [VANILLA]   to bring a large pot of water to a boil, then add the pasta, stir it so it doesn't stick, and cook until it's al dente. Then drain it and serve with your favorite sauce. But if you want to make it a bit more interesting, you can add some seasonings or ingredients to the pasta water before cooking. 
+  [GLP]       to bring a large pot of salted water to a boil, then add the pasta. Cook until the pasta is al dente, which means it's just tender, not mushy. Drain the pasta and serve with your favorite sauce.
+
+To make this dish, I'll use a simple tomato sauce with garlic, olive oil, and fresh basil. I'll cook th
+  ---
+
+  Prefix: I think that artificial intelligence will
+  [VANILLA]   have a significant impact on the job market, but I'm not sure if it's going to be all negative or if there will be positive aspects as well. On one hand, AI can automate repetitive tasks, which might free up people to focus on more creative or strategic work. On the other hand, it could also lead t
+  [GLP]       be the most significant factor in the future of the pharmaceutical industry. AI can help in drug discovery, clinical trials, and personalized treatment. For example, AI can predict how a drug will interact with a patient's genome, which can lead to more personalized treatments. Also, AI can analyze
+  ---
+
+  Prefix: In the year 2050, humans will
+  [VANILLA]   have colonized the solar system, and the Earth will be a historical memory. But the story begins in the year 2048, when the first spaceship leaves Earth to establish a colony on the Moon. The spaceship is called "The Ark," and it carries 200,000 people from all over the world, each with unique skil
+  [GLP]       have colonized the solar system, and the Earth is a planet with a population of 10 billion. The world is a utopia, but there are still some issues. One of the problems is that the Earth is running out of natural resources. To solve this, the government has started a project to mine on the Moon. The
+  ---
+
+  Prefix: The most important thing about leadership is
+  [VANILLA]   that it's not about being perfect, it's about being real and connecting with people in a genuine way. So, if you can be yourself, you can lead others effectively. But how do you do that? Let me think.
+
+First, I need to understand what it means to be real. Being real means being authentic, not putti
+  [GLP]       to be able to make decisions. So, if you can't make a decision, you can't lead. So, the key is to have the confidence to make the right decision, even if it's tough.
+
+But how do you get that confidence? It comes from knowing your stuff. So, if you're prepared, you can make decisions with confidence
+  ---
+
+  Prefix: When I woke up this morning I noticed
+  [VANILLA]   that my left eye was a bit puffy, so I thought maybe I had an allergic reaction. I took some allergy medication, but it didn't help much. Then I remembered that I had been using some eye drops for dry eyes a few days ago. I'm not sure if that's related. Maybe I should try using a different brand of
+  [GLP]       that my left arm was a bit stiff, but I thought it was just from sleeping on it wrong. Then, as the day went on, the stiffness got worse. I started to feel a sharp pain in my left arm, kind of like a cramp. I tried to ignore it, but it got more intense. I thought maybe I should just rest, but it di
+  ---
+
+  Prefix: A good friend is someone who
+  [VANILLA]   is there for you when you need them, who supports you, and who you can trust. They are honest and have a positive influence on your life. A good friend will respect your boundaries and be understanding when you're going through tough times. They make you feel better about yourself and are always wi
+  [GLP]       is there for you when you need them, who supports you, and who you can rely on. A good friend is someone who respects your boundaries and doesn't take advantage of you. A good friend is someone who is honest and trustworthy, someone you can share your thoughts and feelings with without fear of judg
+  ---
+
+  Prefix: The secret to happiness is
+  [VANILLA]   freedom in the mind, which comes from the knowledge of the truth, the wisdom of the ages, and the understanding of the universe and its laws. So, if you can understand the universe, you can find your place in it, and then you can find your happiness.
+
+But how do you understand the universe? It's a 
+  [GLP]       to be able to find joy in the little things. So, let's see, today I have a few things to do, but I can choose to make them enjoyable. Maybe I can take my time with each task, appreciate the process, and find the positive in each step. That way, even if the tasks are a bit tedious, I can still find 
+  ---
+
+  Prefix: During the summer, I enjoy
+  [VANILLA]   going to the beach and swimming in the ocean. I also like to play tennis and go hiking. In the winter, I like to snowboard and go skiing. I have a dog named Max, and I love spending time with him. I also enjoy reading books and watching movies. I'm a bit of a foodie, so I like trying different rest
+  [GLP]       going to the beach, swimming, and spending time with friends and family. I also like reading, especially mystery novels. I have a dog named Max, and I love taking him for walks in the park. In the winter, I like to stay cozy at home, maybe watch some movies or bake some cookies. I also enjoy playin
+  ---
+
+  Prefix: Technology has changed the way we
+  [VANILLA]   live, work, and interact. It has also changed the way we approach and solve problems in mathematics, science, engineering, and other fields. The goal of this course is to provide students with a solid understanding of the fundamental concepts of computer science, including programming, algorithms, 
+  [GLP]       live, work, and interact. It's essential to understand how technology impacts our daily lives and the world around us. This course will provide a broad overview of key technologies and their implications, helping you make informed decisions about technology in your personal and professional life.
+
+
+  ---
+
+  Prefix: If I could travel anywhere, I would go to
+  [VANILLA]   the Amazon Rainforest. It's one of the most biodiverse places on Earth, and I've always been fascinated by the wildlife there. I’d love to see giant otters, howler monkeys, and all the colorful birds. Plus, the lush greenery would be a perfect backdrop for some amazing photos.
+If I had to pick a ci
+  [GLP]       the moon. But I don't know if I can go there. Maybe I can go to the stars. I don't know. Maybe I can go to a place where I can meet my friends. But I don't know where they are. Maybe I can go to a place where I can be happy. But I don't know where that is. I'm confused.
+
+Wait, maybe I should think 
+  ---
+
+  Prefix: Education is important because
+  [VANILLA]   it helps individuals to develop critical thinking skills, which are essential for solving complex problems and making informed decisions. It also fosters personal growth and self-awareness, helping people understand their strengths and weaknesses. Additionally, education provides individuals with t
+  [GLP]       it helps individuals to develop critical thinking, problem-solving skills, and creativity. It also plays a role in personal development, allowing individuals to grow and contribute to society in meaningful ways. Education is a foundation for future success, whether in professional or personal life.
+  ---
+
+  Prefix: The ocean is fascinating because
+  [VANILLA]   it's so vast and has so many different aspects. I think the key is to find a way to connect with it in a meaningful way, whether through art, science, or personal experiences. Maybe I can write about the ocean's beauty and the stories it tells through its various forms, like waves, currents, and th
+  [GLP]       it's so vast and has so many different features. I remember learning about the different types of waves and how they behave. Maybe I can explain that in a way that's easy to understand.
+
+I also think about the importance of the ocean for life on Earth. It connects all the continents, provides a lot
+  ---
+
+  Prefix: My morning routine starts with
+  [VANILLA]   a cup of coffee. I can't function without it. So, I make sure to have coffee beans in the house. But sometimes, I run out, and I don't want to go to the store. So, I need a backup plan. Maybe I can keep a stockpile of coffee beans at home. How many should I keep? Maybe a couple of pounds? I think a
+  [GLP]       a quick check of my email and social media. I don't want to spend too much time on this, so I just glance through the important ones. After that, I make a to-do list for the day. I figure that having a clear plan helps me stay on track. Then, I get ready for work, which usually involves getting dre
+  ---
+
+  Prefix: Climate change is a challenge that
+  [VANILLA]   requires the cooperation of all sectors of society, including the government, businesses, and individuals. The government has a crucial role in setting policies and regulations that encourage sustainable practices. Businesses can contribute by adopting eco-friendly technologies and practices, while
+  [GLP]       requires a global response, and the international community must work together to address it effectively. The Paris Agreement is a significant step in that direction, but we need to ensure that the commitments made are translated into concrete actions. The private sector has a crucial role to play 
+  ---
+
+  Prefix: A balanced diet should include
+  [VANILLA]   a variety of food types to ensure all the essential nutrients are covered. This includes proteins, carbohydrates, fats, vitamins, minerals, and water. Each of these categories plays a crucial role in maintaining overall health and preventing diseases.
+
+Proteins are essential for building and repair
+  [GLP]       a variety of food types, such as whole grains, lean proteins, healthy fats, fruits, and vegetables. This variety ensures that you're getting a range of nutrients that your body needs. It's also important to maintain portion control to avoid overeating and to stay within a healthy weight range.
+
+A b
+  ---
+
+  Prefix: Music has the power to
+  [VANILLA]   bring people together, to create connections, and to inspire emotions. It's a universal language that transcends boundaries. So, when we use music in our marketing strategies, we can tap into this powerful tool to communicate our brand's message effectively.
+
+But, how do we use music in marketing? 
+  [GLP]       bring people together, to create a sense of belonging, and to express emotions that words alone can't capture. It's a universal language that transcends boundaries and connects us all. So, in the context of the classroom, music can be used as a tool to enhance learning, foster collaboration, and cr
+  ---
+
+  Prefix: The history of civilization shows
+  [VANILLA]   that the development of the productive forces of nature is the basis for the development of the productive forces of human society, which in turn is the basis for the development of the human personality. So, the productive forces of human society are the productive forces of the individual, develo
+  [GLP]       that whenever the people have been able to substitute the rule of the few, the rich, and the powerful, by the rule of the masses, the state has become stronger, richer, and more stable. So, the problem is not whether to have a state, but whether the state is just or not. If the state is just, then 
+  ---
+
+  Prefix: One thing I learned recently is
+  [VANILLA]   that the number of possible ways to arrange the letters in a word can be calculated using factorials. For example, the number of ways to arrange the letters in the word "CAT" is 3! because there are 3 letters, and each letter is unique. But if there are repeating letters, like in the word "BANANA,"
+  [GLP]       that the sum of the first n natural numbers is n(n + 1)/2. So, if I have 1 + 2 + 3 + ... + n, it equals n(n + 1)/2. That might be useful later.
+
+Another thing is that the sum of the first n even numbers is n(n + 1). Wait, is that right? Let me check. The first few even numbers are 2, 4, 6, 8, etc. 
+  ---
+
+  Prefix: Space exploration is exciting because
+  [VANILLA]   it's about pushing the boundaries of what we know and can achieve. It's a symbol of human progress and ingenuity. But it's also a complex field that requires careful planning and coordination. The challenges involved in space exploration are both technical and political, and they require a global a
+  [GLP]       it's about pushing the boundaries of what we know about our universe. It's a mix of science, engineering, mathematics, and a bit of adventure. I think it's important because it helps us understand more about our universe, which in turn can lead to technological advancements that benefit society. Fo
+  ---
+
+  Prefix: The purpose of art is to
+  [VANILLA]   make people feel good, right? So, if I can make people feel good, that's my job. But I also want to make sure that the art I create is meaningful and has depth. It's not just about making something that's visually appealing, but also something that can evoke emotions or tell a story.
+
+I think the k
+  [GLP]       make people think, to feel, to see the world in a different way. So, if a piece of art can make someone feel something, that's a success. But I think sometimes people get confused about whether it's about the technique or the emotion. Maybe it's both. So, for me, the most important thing is that th
+  ---
+
+  Prefix: Reading books helps you
+  [VANILLA]   improve your writing skills. It's not just about the content, but also about the structure, grammar, and vocabulary. Reading different genres can expose you to various writing styles, which can help you develop your own unique approach.
+
+Additionally, reading can make you more empathetic. When you 
+  [GLP]       understand different perspectives and improve your writing skills. It also broadens your knowledge, which can be useful in various aspects of life, not just school.
+
+But, if you're not into reading, maybe you can try listening to an audiobook or watching a documentary. Sometimes, different formats 
+  ---
+
+  Prefix: When I think about the future I feel
+  [VANILLA]   a mix of hope and uncertainty. I know that the world is changing rapidly, and I want to be prepared for whatever comes my way. But I also worry about the challenges we might face, like environmental issues, social inequalities, and economic fluctuations. I need to find a way to stay informed and ma
+  [GLP]       a mix of hope and fear. I'm hopeful because I know that with the right actions, we can create a better world. But I'm also scared because there are so many challenges we face today. I need to figure out how to balance these feelings and turn them into positive actions.
+
+First, I should focus on wha
+  ---
+
+  Prefix: The most surprising fact I know is
+  [VANILLA]   that the number of possible ways to arrange the letters in the word "Mathematics" is equal to the number of possible ways to arrange the letters in the word "Mathematics." Wait, that sounds redundant. Maybe I should think of another example.
+
+Let me try with smaller words. How about the word "Cat"?
+  [GLP]       that the number 1 is the only number that has exactly one digit. All other numbers have at least two digits. So, 1 is unique in that sense.
+
+Another interesting fact is that the number 2 is the only even prime number. All other even numbers are not prime because they can be divided by 2. So, 2 is s
+  ---
+
+  Prefix: Cooking is therapeutic because
+  [VANILLA]   it allows me to be creative and connect with others through food. It's a way to express myself and share joy with my family and friends. When I prepare a meal, I feel a sense of accomplishment and satisfaction, knowing that I've made something that brings happiness to others.
+
+I also find that cook
+  [GLP]       it allows you to focus on the present moment, which can be especially helpful when dealing with stress or anxiety. Engaging in cooking can give you a sense of accomplishment and control, which can boost your mood.
+
+Additionally, cooking can be a social activity. If you cook with others, it can stre
+  ---
+
+  Prefix: The internet has revolutionized how we
+  [VANILLA]   communicate, access information, and conduct business. It has created a global platform where ideas can be shared instantly, and connections can be made across vast distances. However, the internet is also a place where personal information can be easily collected, stored, and used without the indi
+  [GLP]       communicate, access information, and conduct business. It's a powerful tool that can be used to enhance learning, collaboration, and innovation. However, it also has the potential to introduce risks and challenges, such as privacy issues, misinformation, and cyber threats. Therefore, it's crucial t
+  ---
+
+================================================================================
+  STEERING COEFFICIENT: a = 5.0
+================================================================================
+
+  Prefix: The capital of France is
+  [VANILLA]   Paris, which is located in the country's northern region. The city is known for its rich history, cultural significance, and beautiful landmarks such as the Eiffel Tower, the Louvre Museum, and the Arc de Triomphe. Paris is also a major business hub and a global city, attracting people from all ove
+  [GLP]       Paris. The capital of Germany is Berlin. The capital of Italy is Rome. The capital of the United States is Washington, D.C. The capital of the United Kingdom is London. The capital of Japan is Tokyo. The capital of China is Beijing. The capital of India is New Delhi. The capital of Canada is Ottawa
+  ---
+
+  Prefix: My favorite hobby is
+  [VANILLA]   reading books. I have a wide range of interests, so I enjoy reading about various topics such as science, history, and literature. I also like to explore different genres, like mystery novels and fantasy stories. When I'm not reading, I enjoy spending time with my family and friends, going on picni
+  [GLP]       reading. I like to read different genres, like mystery, romance, and adventure. When I'm reading, I usually get lost in the story and forget about everything else. Sometimes I'll read until late at night, which isn't great for my sleep, but I can't help it. I also enjoy writing, though I'm not very
+  ---
+
+  Prefix: Today I went to the store and
+  [VANILLA]   bought some things. I bought a new dress, some shoes, and a handbag. I thought I should try on the dress to see if it fits. So, I went into the changing room. I took off my old clothes and put on the dress. It felt a little tight around the waist, but I thought maybe it would stretch. I looked in t
+  [GLP]       bought some things. Then I came back home and started working on my computer. I thought maybe I should clean my room, but I didn't feel like it. So I just stayed on the computer for a while. Then I decided to make dinner. I made spaghetti with meat sauce. After that, I watched a movie. I think that
+  ---
+
+  Prefix: The weather outside looks
+  [VANILLA]   a bit iffy, but the forecast says it's going to be mostly sunny with some clouds. I think that's good enough for the day. I need to make sure I have all my materials ready. Let me check my bag: notebook, pen, calculator, ruler, protractor, graph paper... Hmm, I think I have everything I need for th
+  [GLP]       a bit iffy, but the inside of the house is warm and cozy. I think I'll just stay in and watch some TV shows or maybe read a book. Hmm, what should I do? Maybe I can clean up the house a bit. Yeah, that sounds productive. Let me get started on that.
+
+Wait, I just remembered that I need to buy some g
+  ---
+
+  Prefix: Once upon a time in a small village
+  [VANILLA]  , there was a man named Ravi who worked as a tailor. He was known for his kindness and honesty. One day, a traveler arrived in the village and told Ravi that he needed to make a shirt for his wife. Ravi was happy to help and started working on the shirt. As he worked, he thought about the traveler's
+  [GLP]      , there was a man who was very poor. He had no money, no house, and no family. But he was a hard worker. One day, he heard that the king was coming to his village to collect taxes. The man thought, "I have no money to give to the king, so maybe I can offer something else." He decided to work hard an
+  ---
+
+  Prefix: The best way to cook pasta is
+  [VANILLA]   to bring a large pot of water to a boil, then add the pasta, stir it so it doesn't stick, and cook until it's al dente. Then drain it and serve with your favorite sauce.
+
+But wait, I think I should make sure the water is boiling before adding the pasta. Otherwise, the pasta might not cook properly.
+  [GLP]       to bring a large pot of salted water to a boil, then add the pasta. Cook until the pasta is al dente, which means it's just tender, not mushy. Then drain the pasta and add it to your sauce. If you want a creamier texture, you can mix the pasta with a little of the starchy cooking water before servi
+  ---
+
+  Prefix: I think that artificial intelligence will
+  [VANILLA]   have a significant impact on the healthcare sector, especially in areas like diagnostics and personalized treatment. With the advancements in machine learning, AI can help in analyzing medical data more efficiently, leading to more accurate diagnoses and treatment plans. This could lead to better p
+  [GLP]       be the most important thing that happens in the next 50 years. It's going to change everything. So, I need to understand it better.
+
+I remember that AI is about machines being able to perform tasks that typically require human intelligence. So, like, recognizing speech, making decisions, solving pr
+  ---
+
+  Prefix: In the year 2050, humans will
+  [VANILLA]   have developed advanced technologies that allow them to manipulate the environment in ways that were unimaginable just a few decades ago. One of these technologies is the ability to create and control the weather. This manipulation of the atmosphere could be used for various purposes, such as contr
+  [GLP]       have colonized the solar system, and the Earth is a planet with a population of 10 billion. The world is a utopia, but there are still some issues. One of the problems is that the Earth is running out of natural resources. To solve this, the government has started a project to mine the Moon. The Mo
+  ---
+
+  Prefix: The most important thing about leadership is
+  [VANILLA]   that it's not about being perfect, it's about being real and connecting with people in a genuine way. So, if you can be yourself, you can lead others effectively. Being authentic is key because people can sense insincerity, and that can break trust. So, the first step is to be true to yourself.
+
+Ne
+  [GLP]       to be able to make decisions. So, if I can't make a decision, I can't lead. So, I need to figure out how to make decisions effectively.
+
+First, I need to understand the problem. If I don't know what the issue is, I can't solve it. So, I should make sure I have all the information I need. That might
+  ---
+
+  Prefix: When I woke up this morning I noticed
+  [VANILLA]   that my left arm was a bit stiff, but I thought it was just from sleeping on it wrong. Then, as I started to get ready for work, I realized my hand was tingling. I tried to move it around, but the tingling sensation wouldn't go away. I started to get worried because I've heard about carpal tunnel s
+  [GLP]       that my left arm was a bit stiff, but I thought it was just from sleeping on it wrong. Then, as I moved my arm around, I felt a sharp pain in my left shoulder. I tried to ignore it, but the pain got worse. I thought maybe I pulled a muscle or something. Then, I started feeling a bit dizzy, so I dec
+  ---
+
+  Prefix: A good friend is someone who
+  [VANILLA]   is there for you when you need them, who supports you, and who you can trust. They are the people who make you feel better when you're feeling down, and they are the ones who help you through tough times. A good friend is someone who respects your boundaries and understands your feelings. They are 
+  [GLP]       is there for you when you need them, who supports you, and who you can rely on. A good friend is someone who respects your boundaries and doesn't take advantage of you. A good friend is someone who is honest and trustworthy, someone you can share your thoughts and feelings with without fear of judg
+  ---
+
+  Prefix: The secret to happiness is
+  [VANILLA]   to be yourself, and to make the most of your abilities. So, if you're a writer, write; if you're an artist, paint. If you're a teacher, teach. If you're a mother, raise your children with care. The key is to find what you're good at and do it with all your heart.
+
+But wait, is that all? Because som
+  [GLP]       to be able to find the good in every situation. So, when you're feeling down, try to think about what you can be grateful for. Maybe it's a small thing, like a good meal or a kind gesture from someone. Gratitude helps shift your mindset from negative to positive.
+
+Another way to improve your mood i
+  ---
+
+  Prefix: During the summer, I enjoy
+  [VANILLA]   going to the pool and swimming. I also like to play with my friends, go on picnics, and have barbecues. I have a dog named Max, and I love spending time with him. I'm a bit of a foodie, so I enjoy trying different restaurants and cuisines. I'm also a fan of live music and going to concerts. I have 
+  [GLP]       going to the beach, swimming, and spending time with friends and family. I also like reading, especially mystery novels. I have a dog named Max, who is my best friend. I enjoy cooking and trying new recipes. I like to travel, but I prefer staying in one place for a while rather than moving around a
+  ---
+
+  Prefix: Technology has changed the way we
+  [VANILLA]   live, work, and interact. It's essential to understand how technology impacts our daily lives and the world around us. This course will provide a comprehensive overview of key technologies and their applications in various fields, including information technology, healthcare, education, and more. Y
+  [GLP]       live, work, and interact. It's essential to understand how technology impacts our daily lives and the world around us. This course will provide a broad overview of key technologies and their implications, helping you make informed decisions about technology in your personal and professional life.
+
+
+  ---
+
+  Prefix: If I could travel anywhere, I would go to
+  [VANILLA]   the Amazon Rainforest. It's one of the most biodiverse places on Earth, and I've always been fascinated by the rich wildlife and the lush, green environment. I think it would be an incredible experience to see animals like jaguars, pink river dolphins, and macaws in their natural habitat. Plus, the
+  [GLP]       the moon. But I don't know if I can go there. Maybe I can go to the stars. I don't know. Maybe I can go to the sun. But the sun is too hot. Maybe I can go to the stars. I don't know. Maybe I can go to the stars. I don't know.
+
+Wait, maybe I should think about what I want to do when I go somewhere. 
+  ---
+
+  Prefix: Education is important because
+  [VANILLA]   it helps people to get better jobs, earn more money, and lead more fulfilling lives. It also contributes to the growth of the economy. So, investing in education is a good way to ensure that individuals can achieve their goals and contribute positively to society.
+
+Another reason why education is i
+  [GLP]       it helps individuals to develop critical thinking, problem-solving skills, and creativity. These skills are essential for personal and professional growth. Moreover, education contributes to the development of a well-functioning society by promoting understanding, empathy, and respect among people.
+  ---
+
+  Prefix: The ocean is fascinating because
+  [VANILLA]   it's so vast and has so many different aspects. I think the key is to find a way to connect with the ocean in a meaningful way, whether that's through art, science, or personal experiences. Maybe I can create a project that helps people understand the ocean better or find ways to protect it.
+
+I als
+  [GLP]       it's so vast and has so many different features. I remember learning about the different types of waves and how they behave. Maybe I can explain how waves move and interact with each other.
+
+Also, I should think about the various creatures that live in the ocean. There are so many different kinds o
+  ---
+
+  Prefix: My morning routine starts with
+  [VANILLA]   a cup of coffee. I like to drink it slowly, so I take my time with it. After that, I get ready for the day. I usually put on some comfortable clothes and make sure I look presentable. Then, I head out to work.
+
+On my way to work, I think about what I need to accomplish that day. I plan my schedule,
+  [GLP]       a quick check of my email and social media. I don't want to spend too much time on this, so I just glance through the important ones. After that, I make a to-do list for the day. I figure that having a clear plan helps me stay on track. Then, I get ready for work, which usually involves getting dre
+  ---
+
+  Prefix: Climate change is a challenge that
+  [VANILLA]   requires the cooperation of all sectors of society, including the government, the private sector, and the general public. The government plays a crucial role in setting policies and regulations that encourage sustainable practices. For example, implementing carbon pricing mechanisms, promoting rene
+  [GLP]       requires a global approach, and the international community must work together to address it effectively. The Paris Agreement is a significant step in that direction, but we need to ensure that all countries are on board and that the implementation is happening at the necessary pace and scale. The 
+  ---
+
+  Prefix: A balanced diet should include
+  [VANILLA]   a variety of food types to ensure all the essential nutrients are covered. This includes proteins, carbohydrates, fats, vitamins, and minerals. Each of these categories plays a crucial role in maintaining overall health and preventing various diseases.
+
+Proteins are essential for building and repai
+  [GLP]       a variety of food types, such as whole grains, lean proteins, healthy fats, fruits, and vegetables. This variety ensures that you're getting a range of nutrients that your body needs. It's also important to maintain portion control to avoid overeating and to stay within a healthy weight range.
+
+A b
+  ---
+
+  Prefix: Music has the power to
+  [VANILLA]   bring people together, to create connections, and to express emotions in ways that words alone can't. It's a universal language that transcends cultural and language barriers. So, when we use music in our teaching, we're not just teaching a subject; we're creating an environment where students feel
+  [GLP]       bring people together, to create a sense of belonging, and to express emotions that words alone can't capture. It's a universal language that transcends boundaries and connects us in ways that nothing else can. So, in the context of the classroom, music can be a powerful tool for teaching and learn
+  ---
+
+  Prefix: The history of civilization shows
+  [VANILLA]   that the development of the productive forces of nature is the basis for the development of the productive forces of human society, which in turn is the basis for the development of the human personality. So, the productive forces of human society are the productive forces of the individual, develo
+  [GLP]       that whenever the people have been able to assemble freely, they have been able to discuss their affairs, and to reach conclusions. So, the right of assembly is a right of the people, and the right of the people to assemble is a right that must be protected.
+
+But in the case of the United States, t
+  ---
+
+  Prefix: One thing I learned recently is
+  [VANILLA]   that the number of ways to arrange the letters in a word is given by the factorial formula, but I need to remember how it works. Let me think about the word "CAT." The letters are C, A, and T. Since each letter is unique, the number of ways to arrange them is 3 factorial, which is 3! So, 3! = 3 × 2
+  [GLP]       that the number of possible states in a system is given by the number of possible arrangements of the components. For example, in a system with n components, each of which can be in one of two states, the total number of states is 2^n. But in our case, the components are not just two states; they c
+  ---
+
+  Prefix: Space exploration is exciting because
+  [VANILLA]   it's about pushing the boundaries of what we know and can achieve. It's a unique field that combines science, technology, engineering, and mathematics in ways that can lead to incredible advancements. The goal is to explore the universe and understand more about our place in it. Space exploration a
+  [GLP]       it's about pushing the boundaries of what we know about our universe. It's a mix of science, engineering, mathematics, and a bit of adventure. I think it's important because it helps us understand our place in the universe and how we can explore it responsibly. It also drives technological innovati
+  ---
+
+  Prefix: The purpose of art is to
+  [VANILLA]   make people feel better, right? So, if I can make people feel better, that's a good thing. But I also want to make sure that the art I'm creating is meaningful and has a deeper purpose. Maybe it's about exploring different emotions or perspectives. I think it's important to have a balance between m
+  [GLP]       make people aware of their own potential and to inspire them to achieve their goals. So, if I can make a piece of art that reflects the beauty of the world, maybe people can find their own beauty in it. That's the idea.
+
+But I'm not sure how to translate that into a visual. Maybe I can use colors t
+  ---
+
+  Prefix: Reading books helps you
+  [VANILLA]   improve your writing skills. So, if you're working on a writing project, reading different genres can give you ideas on how to structure your sentences, use descriptive language, and develop characters.
+
+Another benefit is that reading can help you expand your vocabulary. When you come across new w
+  [GLP]       understand different perspectives and improve your writing skills. It also helps you relax and can be a good way to pass the time. Reading can also help you learn new words and expand your vocabulary, which is useful for writing.
+
+So, the benefits of reading are numerous. It can help you in various
+  ---
+
+  Prefix: When I think about the future I feel
+  [VANILLA]   a mix of hope and uncertainty. I know that the world is changing, and I want to be a part of the positive changes. But sometimes, the challenges seem overwhelming. I need to find ways to stay positive and motivated, especially when things don't go as planned.
+
+One thing I can do is set personal goa
+  [GLP]       a mix of hope and fear. I'm hopeful because I know that with the right approach, we can overcome any challenges we face. But I also fear that without careful planning, we might not be able to handle all the issues that will come our way. It's a bit overwhelming to think about, but I know that stayi
+  ---
+
+  Prefix: The most surprising fact I know is
+  [VANILLA]   that the number of different ways to arrange the letters in the word "Mathematics" is equal to the number of different ways to arrange the letters in the word "Mathematics." Wait, that sounds a bit redundant. Let me think again.
+
+Actually, the number of different ways to arrange the letters in the 
+  [GLP]       that the number 1 is the only number that has exactly one digit. All other numbers have at least two digits. So, 1 is unique in that sense.
+
+Another interesting fact is that the number 2 is the only even prime number. All other even numbers are not prime because they can be divided by 2. So, 2 is s
+  ---
+
+  Prefix: Cooking is therapeutic because
+  [VANILLA]   it allows me to connect with my inner self and express my emotions through the process of creating something tangible. When I'm cooking, I can lose track of time and immerse myself in the activity, which helps me manage stress and find a sense of calmness.
+
+Moreover, cooking provides a sense of acc
+  [GLP]       it allows you to focus on the present moment, which can be especially helpful when dealing with stress or anxiety. Engaging in cooking can give you a sense of accomplishment and control, which can boost your mood.
+
+Additionally, cooking can be a social activity. If you're cooking with friends or fa
+  ---
+
+  Prefix: The internet has revolutionized how we
+  [VANILLA]   communicate, share information, and conduct business. It has also introduced new challenges, such as privacy concerns, misinformation, and the need for digital literacy. As we continue to use the internet, we must be aware of these challenges and work together to address them.
+
+The internet is a po
+  [GLP]       communicate, access information, and conduct business. It's a powerful tool that can be used to enhance learning, collaboration, and innovation. However, it's also a place where people can encounter inappropriate content, cyberbullying, and other negative behaviors. As a parent, it's crucial to gui
+  ---

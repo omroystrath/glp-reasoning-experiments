@@ -4,4 +4,9 @@
 **wandb**
 **experimental**
 integrations/persona_vectors/persona_vectors/
-glp.egg-info/
+glp.egg-info/data/
+*.pt
+experiments/**/*.pt
+data/
+*.pt
+experiments/**/*.pt

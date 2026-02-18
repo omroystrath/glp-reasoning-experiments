@@ -1,0 +1,35 @@
+# ---- Large model / checkpoint files ----
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+
+# PEFT / LoRA adapters sometimes are safetensors too (kept ignored unless you whitelist below)
+# If you DO want to keep small adapters, you can unignore specific paths later.
+
+# ---- Big datasets / logs ----
+*.jsonl
+*.parquet
+*.arrow
+*.csv
+*.tsv
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+
+# ---- Experiment outputs / caches ----
+experiments/
+results*/
+wandb/
+runs/
+logs/
+checkpoints/
+__pycache__/
+*.pyc
+.DS_Store

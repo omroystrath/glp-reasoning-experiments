@@ -1,12 +1,31 @@
-**__pycache__**
-**runs**
-**data**
-**wandb**
-**experimental**
-integrations/persona_vectors/persona_vectors/
-glp.egg-info/data/
+# Large model/checkpoint files
+*.safetensors
+*.bin
 *.pt
-experiments/**/*.pt
-data/
-*.pt
-experiments/**/*.pt
+*.pth
+*.ckpt
+
+# Big artifacts / datasets
+*.parquet
+*.arrow
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+
+# Experiment outputs / caches
+experiments/
+wandb/
+runs/
+logs/
+checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore CAFT / finetune outputs inside caft_pipeline
+caft_pipeline/experiments/
+caft_pipeline/**/trained_caft/
+caft_pipeline/**/model/*.safetensors
